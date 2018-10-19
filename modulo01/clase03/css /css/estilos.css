@@ -1,0 +1,18 @@
+body{
+	font-family: arial;
+	text-align: center;
+}
+h1{
+	color:red;
+}
+
+.foto-portada{
+	width: 600px;
+}
+
+.foto-portada2{
+	width: 300px;
+}
+.subtitle{
+	color: green;
+}

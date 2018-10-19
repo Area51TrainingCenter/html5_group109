@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo Formulario</title>
+</head>
+<body>
+<h1>Probando los formularios</h1> 
+
+<form action="success.html" method="POST">
+	<label for="nombre">Nombre:</label>
+	<input type="text" name="nombre" required>	
+	<br>
+	<label for="appellidos">Apellidos:</label>
+	<input type="text" name="apellidos" required>	
+	<br>
+	<label for="correo">Correo:</label>
+	<input type="text" name="correo" required>	
+	<br>
+	<label for="contrasena">Contraseña</label>
+	<input type="password" name="contrasena">
+	<br>
+	<label>Escoge el curso de tu elección</label><br>
+
+
+	<label><input type="checkbox"> Html</label><br>
+	<label><input type="checkbox"> Css</label><br>
+	<label><input type="checkbox"> JS</label><br>
+
+	<label>Escoge el horario de tu elección</label><br>
+
+
+	<label><input type="radio" name="horario"> Mañana</label><br>
+	<label><input type="radio" name="horario"> Tarde</label><br>
+	<label><input type="radio" name="horario2"> Noche</label><br>
+	<label><input type="radio" name="horario2"> madrugada</label><br>
+
+	<label>Selecciona el distrito en donde vives</label>
+	<select>
+			<option value="0">Selecciona un distrito</option>
+			<option value="LIMA10">Jesús María</option>
+			<option value="LIMA06">Callo</option>
+			<option>Lince</option>
+			<option>Jesús María</option>
+	
+
+			
+	</select>
+	<br>
+	<label>Deja tu comentario</label>
+	<br>
+	<textarea></textarea>
+	<br>
+	<label>Seleccion tu foto favorita</label><br>
+	<input type="file" name="">
+	<br>
+	<input type="submit" name="" value="Registrar">
+	<input type="reset" name="" value="limpiar campos">
+
+</form>
+<br>
+<form>
+	<label>Fecha de registro</label>
+	<input type="text" name="fecha" value="18/10/2018" disabled>	
+	<br>
+	
+
+	<label>Fecha de registro </label>
+	<input type="text" name="fecha" value="18/10/2018" readonly>	
+	<br>
+
+	<input type="text" name="nombre" placeholder="Nombres" disabled>	
+	<br>
+
+	<input type="text" name="apellidos" placeholder="Apellidos aquí...">	
+	<br>
+	
+	<input type="text" name="correo" value="@gmail.com">	
+	<br>
+
+
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
