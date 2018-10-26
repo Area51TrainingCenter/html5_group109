@@ -1,0 +1,54 @@
+body{
+	font-family: arial;
+}
+.header-site{
+	background-color: #e2e2e2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.title{
+ 
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+
+}
+
+.title-new{
+	font-size: 21px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pic-new{
+	width: 100%;
+}
+
+.parrafo{
+	padding: 10px;
+}
+.btn{
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	display: inline-block;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+/*	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+	margin-bottom: 30px;*/
+}
+
+.centrando-btn{
+	text-align: center;
+}
+
+
+
+
