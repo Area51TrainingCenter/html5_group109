@@ -1,0 +1,49 @@
+*{
+	padding: 10px;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+}
+.top-bar{
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+.logo-site{
+	text-align: center;
+
+}
+.logo-site img{
+	width: 100px;
+}
+.form-search{
+text-align: center;	
+border-top:2px solid black;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.inp-busqueda{
+	border:none;
+	background-color: gray;
+	outline: none;
+}
+
+
+.btn-busqueda{
+	background-color: black;
+	color:yellow;
+	border:none;
+}
+
+
+
+
+
+
+
+
+
+
