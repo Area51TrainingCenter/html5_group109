@@ -1,0 +1,28 @@
+.titulo{
+	background-color: tomato;
+	width: 200px;
+
+}
+.parrafo{
+background-color: skyblue;
+}
+.text{
+background-color: yellow;
+padding: 20px;
+margin:20px;
+}
+
+.parrafo1{
+	width: 300px;
+	background-color: tomato;
+	display: inline-block;
+	vertical-align: top;
+
+}
+.parrafo2{
+	width: 300px;
+	background-color: orange;
+	display: inline-block;
+	vertical-align: top;
+
+}
