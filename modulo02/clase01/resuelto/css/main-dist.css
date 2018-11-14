@@ -1,0 +1,116 @@
+*{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contenido{
+	padding: 20px;
+}
+.dado{
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	padding: 10px;
+	border-radius: 8px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin:10px;
+}
+
+.punto{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.dado1{
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+}
+
+.dado2{
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+
+
+.dado2 .punto:nth-child(2){
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+
+.dado3{
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.dado3 .punto:nth-child(2){
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+.dado3 .punto:nth-child(3){
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+
+.dado4{
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.columna{
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	height: 100%;
+}
+
+
+.dado5{
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.punto5{
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.contenido{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}

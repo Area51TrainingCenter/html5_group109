@@ -1,0 +1,78 @@
+*{
+	box-sizing: border-box;
+}
+
+.contenido{
+	padding: 20px;
+}
+.dado{
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+	margin:10px;
+}
+
+.punto{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.dado1{
+ justify-content: center;
+ align-items: center;
+}
+
+.dado2{
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+
+.dado2 .punto:nth-child(2){
+	align-self: flex-end;
+}
+
+
+.dado3{
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.dado3 .punto:nth-child(2){
+	align-self: center;
+}
+.dado3 .punto:nth-child(3){
+	align-self: flex-end;
+}
+
+
+.dado4{
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.columna{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+
+.dado5{
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.punto5{
+	align-self: center;
+}
+
+.contenido{
+	display: flex;7
+}
