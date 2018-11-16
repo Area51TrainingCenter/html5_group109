@@ -1,5 +1,4 @@
 *{
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 body{
@@ -19,15 +18,9 @@ a{
 }
 
 .header-align{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
 	height: 100px;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 .title-site{
@@ -38,8 +31,6 @@ a{
 }
 
 .nav-site ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 
 }
@@ -57,19 +48,10 @@ a{
 	/*text-align: center;
 	padding-top: 100px;
 	padding-bottom: 100px;*/
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	height: 650px;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 }
 
@@ -97,13 +79,7 @@ a{
 }
 .bloque-articulos{
 	
-	display: -webkit-box;
-	
-	display: -ms-flexbox;
-	
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 }
 .contenedor-articulos{
@@ -136,26 +112,4 @@ a{
 	color: black;
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-.fondo-black{
-	background-color: black;
-	color: white;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.bloque1-footer{
-
-width: 400px;
-}
-.bloque2-footer{
-	
-	width: 400px;
-}
-
-
-.align-footer{
-	display: flex;
-	justify-content: space-between;
 }

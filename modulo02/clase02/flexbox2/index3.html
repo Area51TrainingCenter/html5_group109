@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="item1"></div>
+		<div class="item2"></div>
+	</div>
+	
+</body>
+</html>
+
+<style>
+	.contenedor{
+		width: 500px;
+		height: 700px;
+		background-color: red;
+		display: flex;
+	}
+	.item1{
+		
+		flex-basis: 300px;
+		height: 300px;
+		background-color: orange;
+		flex-shrink: 1;
+	}
+	.item2{
+		flex-basis: 300px;
+		width: 300px;
+		height: 300px;
+		background-color: yellow;
+		flex-shrink: 0;
+	}
+</style>

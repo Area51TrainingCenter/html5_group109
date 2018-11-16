@@ -137,25 +137,3 @@ a{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
-.fondo-black{
-	background-color: black;
-	color: white;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.bloque1-footer{
-
-width: 400px;
-}
-.bloque2-footer{
-	
-	width: 400px;
-}
-
-
-.align-footer{
-	display: flex;
-	justify-content: space-between;
-}

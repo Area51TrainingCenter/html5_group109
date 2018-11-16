@@ -1,0 +1,23 @@
+.contenedor{
+	width: 1024px;
+	height: 500px;
+	background-color: tomato;
+	margin:0 auto;
+
+	display: flex;
+	flex-direction: row;
+	/* maneja el alineamiento del eje principal */
+	justify-content: space-between;
+	align-items: center;
+}
+.item1{
+background-color: yellow;
+width: 300px;
+height: 200px;
+}
+.item2{
+background-color: green;
+width: 300px;
+height: 200px;
+align-self: flex-end;
+}
