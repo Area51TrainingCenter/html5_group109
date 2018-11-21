@@ -1,0 +1,171 @@
+body{
+	font-family: arial;
+
+}
+.title{
+	background-color: red;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+
+}
+/*
+@media screen and (min-width: 0px) and (max-width: 500px){
+	.title{
+		background-color: green;
+		border-bottom: 10px solid black;
+	}
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 700px){
+	.title{
+		background-color: blue;
+		border-bottom: 10px solid black;
+	}
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px){
+	.title{
+		background-color: tomato;
+		border-bottom: 10px solid black;
+	}
+}
+*/
+
+@media screen and (min-width: 0px) and (max-width: 700px){
+	.title{
+		
+			background-color: tomato;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px){
+	.title{
+		border-bottom: 10px solid black;
+		background-color: green;
+	}
+}
+
+@media (max-width: 1000px){
+	.title{
+		border-bottom: 10px solid black;
+		background-color: green;
+	}
+}
+/* de 0 a 1024px */
+@media (max-width: 1024px){
+	.contenedor{
+		background-color: red;
+	}
+}
+
+@media (max-width: 800px){
+
+}
+
+
+@media (max-width: 600px){
+
+}
+
+
+
+@media (max-width: 400px){
+
+}
+
+@media (min-width: 1024px){
+
+}
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+
+.contenedor{
+	width: 1024px;
+	height: 500px;
+	margin:0 auto;
+	border:10px solid black;
+	background-color: gray;
+	/*display: flex;
+	flex-wrap: nowrap;*/
+
+}
+/** con display **/
+.box1{
+width: 498px;
+height: 300px;
+background-color: tomato;
+display: inline-block;
+vertical-align: top;
+}
+.box2{
+width: 498px;
+height: 300px;
+background-color: green;
+display: inline-block;
+vertical-align: top;
+}
+
+/** con flex **/
+/*.box1{
+width: 100%;
+height: 400px;
+background-color: tomato;
+flex-grow: 1;
+
+}
+.box2{
+	width: 100%;
+	height: 400px;
+	flex-grow: 1;
+background-color: green;
+
+}*/
+@media screen and (min-width: 0px) and (max-width:1024px){
+	.contenedor{
+		width: 100%;
+	}
+
+	/*¡ con display */
+	.box1{
+		width: 100%;
+	}
+	.box2{
+		width: 100%;
+	}
+	/* con flex 
+	.contenedor{
+		flex-wrap: wrap;
+	}
+	.box1{
+		width: 100%;
+	}
+	.box2{
+		width: 100%;
+	}
+}	*/
+
+@media screen and (min-width: 0px) and (max-width: 500px)
+{
+	/* con flex
+	.contenedor{
+		flex-wrap: nowrap;
+	}*/
+	.box1{
+		width: 49%;
+	}
+	.box2{
+		width: 49%;
+	}
+
+
+}
+
+
+
