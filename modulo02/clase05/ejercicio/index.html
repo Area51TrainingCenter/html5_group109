@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<section class="servicios">
+		
+
+		<div class="contenedor">
+			<div class="bloque-movil">
+				<img class="foto-movil" src="foto1.png" alt="">
+				<span class="title-red">Móvil</span>
+				<ul class="lista-items">
+					<li>PostPago</li>
+					<li>Prepago</li>
+					<li>Internet Móvil</li>
+					<li>Roaming</li>
+				</ul>
+			</div>
+			<div class="bloque-hogar">
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+
+
+	</section>
+	
+</body>
+</html>
+<style>
+	*{
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body{
+		font-family: arial;
+	}
+	.servicios{
+		margin-top: 100px;
+	}
+
+	.contenedor{
+		width: 1024px;
+		margin:0 auto;
+	}
+	.bloque-movil{
+		float: left;
+		width: 50%;
+	}
+	.clear{
+		clear: both;
+	}
+	.bloque-movil{
+		
+		text-align: right;
+		position: relative;
+	}
+	.title-red{
+	font-size: 30px;
+	font-weight: bold;
+	color: red;
+	display: inline-block;
+	float: right;
+	width: 100%;
+	}
+	.lista-items{
+		list-style: none;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 400px;
+		float: right;
+	}
+	.lista-items li{
+		background-color: #f4f4f4;
+		margin-bottom: 15px;
+		padding: 10px 20px;
+	}
+	.foto-movil{
+		position: absolute;
+		left: 0px;
+		top: -20px;
+	}
+</style>
