@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est amet aspernatur ratione illo assumenda reiciendis, mollitia. Excepturi provident id labore, repudiandae numquam illum dolorum, tempora iste odio cumque nobis.</h1>
+	
+	<div class="link-up"></div>
+
+	<p class="comentario">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur commodi a ad, velit ullam eaque, fugiat? Fugit delectus, quisquam quia mollitia, sint doloribus quo hic eius iste quae rerum omnis.
+	<span class="triangulo"></span>
+	</p>
+</body>
+</html>
+<style>
+*{
+	box-sizing: border-box;}
+	.link-up{
+		position: fixed;
+		right:10px;
+		bottom:10px;
+		width: 100px;
+		height: 100px;
+		background-color: red;
+	}
+	.comentario{
+	background-color: skyblue;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 20px;
+	line-height: 1.3;
+	position: relative;
+	}
+	.triangulo{
+		width: 30px;
+		height: 30px;
+		border:15px solid transparent;
+		border-top:15px solid skyblue;
+		position: absolute;
+		right: 20px;
+		bottom:-29px;
+	}
+
+	@media (max-width: 600px){
+			.link-up{display: none;}
+
+	}
+</style>

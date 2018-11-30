@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="title">Lorem ipsum dolor sit amet.</h1>
+
+
+	
+	<span class="triangulo"></span>
+	
+</body>
+</html>
+
+<style>
+*{box-sizing: border-box;}
+	.title{
+		font-family: arila;
+		display: inline-block;
+		border-bottom: 10px solid red;
+		padding: 20px;	
+		position: relative;
+
+	}
+	.title:before{
+		content: "";
+		color: blue;
+		font-weight: bold;
+
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-top:20px solid red;
+		box-sizing: border-box;
+		position: absolute;
+		bottom: -50px;
+		left: 50%;
+		margin-left: -20px;
+
+
+	}
+	.title:after{
+		content: "final."
+	}
+
+	.triangulo{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-top:20px solid orange;
+	}
+</style>
