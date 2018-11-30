@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="lista-fotos">
+			<img class="foto1" src="https://via.placeholder.com/150" alt="">
+			<img class="foto2" src="https://via.placeholder.com/150" alt="">
+			<img class="foto3" src="https://via.placeholder.com/150" alt="">
+			<img class="foto4" src="https://via.placeholder.com/150" alt="">
+	</div>
+	<div class="lista-fotos">
+			<img class="foto5" src="https://via.placeholder.com/150" alt="">
+			<img class="foto6" src="https://via.placeholder.com/150" alt="">
+			<img class="foto7" src="https://via.placeholder.com/150" alt="">
+			<img class="foto8" src="https://via.placeholder.com/150" alt="">
+	</div>
+
+	<div class="lista-ejes">
+			<img class="foto9" src="https://via.placeholder.com/150" alt="">
+
+			<img class="foto10" src="https://via.placeholder.com/150" alt="">
+			
+	</div>
+
+</body>
+</html>
+
+<style>
+	.lista-fotos{
+		margin:60px auto;
+		width: 800px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.foto1{
+		transform: rotate(10deg);
+	}
+	.foto2{
+		transform: rotate(-10deg);
+	}
+	.foto3{
+		transition:all 0.5s linear 0s;
+	}
+
+	.foto3:hover{
+		transform: rotate(-10deg);
+		
+	
+	}
+
+	.foto4{
+		transition:all 0.5s linear 0s;
+	}
+
+	.foto4:hover{
+		transform: rotate(20deg);
+		
+	
+	}
+	.lista-fotos .foto5{
+		transition:all 0.5s linear 0s;
+	}
+	.lista-fotos .foto6{
+		transition:all 0.5s linear 0.6s;
+	}
+	.lista-fotos .foto7{
+		transition:all 0.5s linear 1.2s;
+	}
+	.lista-fotos .foto8{
+		transition:all 0.5s linear 1.8s;
+	}
+	.lista-fotos:hover .foto5{
+		transform: rotate(20deg);
+	}
+
+	.lista-fotos:hover .foto6{
+		transform: rotate(-20deg);
+	}
+	.lista-fotos:hover .foto7{
+		transform: rotate(30deg);
+	}
+	.lista-fotos:hover .foto8{
+		transform: rotate(-30deg);
+	}
+	.lista-ejes {
+		margin:60px auto;
+		width: 800px;
+		display: flex;
+		justify-content:center;
+	}
+	.foto9{
+		transition:all 0.5s linear 0s;
+	}
+	.foto9:hover{
+		transform: rotateX(180deg);
+	}
+
+	.foto10{
+		transition:all 0.5s linear 0s;
+	}
+	.foto10:hover{
+		transform: rotateY(180deg);
+	}
+</style>

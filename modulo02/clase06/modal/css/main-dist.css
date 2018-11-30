@@ -1,4 +1,5 @@
 *{
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 body{
@@ -18,9 +19,18 @@ a{
 	background-image: url(../img/home-bg.jpg);
 	background-size: cover;
 	/*background-position: -50px -30px;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
 	align-items: flex-end;
 	padding-right: 100px;
 }
@@ -80,9 +90,9 @@ border-radius: 10px;
 	text-align: center;
 	border-radius: 10px;
 	margin-top: 50px;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
-	position: relative;
-	top: 0px;	
 }
 
 .item-servicios i{
@@ -100,19 +110,22 @@ border-radius: 10px;
 }
 
 .lista-servicios{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
 .item-servicios:hover{
 	background-color: black;
 	color: white;
-	top: -10px;
-	
 }
 
 .acerca-de .principal{
 	width: 360px;
+	-ms-flex-negative: 0;
 	flex-shrink: 0;
 
 }
@@ -121,10 +134,16 @@ border-radius: 10px;
 	padding-bottom: 90px;
 	padding-left: 110px;
 	padding-right: 110px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .lista-redes {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin-top: 20px;
 }
@@ -134,8 +153,14 @@ border-radius: 10px;
 	background-color: black;
 	color: white;
 	border-radius: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -198,36 +223,28 @@ margin-bottom: 40px;
 	background-color: black;
 	border-radius: 10px;
 	opacity: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	color: white;
+	-webkit-transition:all 0.3s linear;
+	-o-transition:all 0.3s linear;
 	transition:all 0.3s linear;
-	position: relative;
-	padding-bottom: 200px;
 }
 .detail-item-design:hover{
-	opacity: 1;
-	padding-bottom: 0px;
-}
-.detail-item-design span 
-{
-	transition:all 0.3s linear 0s;
-	opacity: 0;
-}
-.detail-item-design h3{
-	transition:all 0.3s linear 0.3s;
-	opacity: 0;
 	
-}
-.detail-item-design:hover span{
 	opacity: 1;
 }
-.detail-item-design:hover h3{
-		opacity: 1;
-}
-
 .detail-item-design span{
 	font-size: 20px;
 }
@@ -250,7 +267,11 @@ margin-bottom: 40px;
 	
 }
 .list-design{
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
 justify-content: space-between;
 
 }
@@ -261,11 +282,14 @@ justify-content: space-between;
 	padding-bottom: 80px;
 	padding-left: 110px;
 	padding-right: 110px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .formulario{
 
 	width: 640px;
+	-ms-flex-negative: 0;
 	flex-shrink: 0;
 }
 .direccion{
@@ -331,14 +355,27 @@ font-size: 16px;
 .footer-site{
 	background-color: skyblue;
 	height: 250px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 
 	}
 .lista-redes-footer{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin-top: 20px;
 	font-size: 17px;
@@ -349,8 +386,14 @@ font-size: 16px;
 	height: 40px;
 	border-radius: 50%;
 	background-color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin-left: 10px;
 	margin-right: 10px;

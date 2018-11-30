@@ -10,6 +10,14 @@
 
 </head>
 <body>
+	<div id="modal" class="modal activo">
+		<div class="contenido-modal">
+			<span class="cerrar-modal" id="cerrar-modal">X</span>
+			<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sit modi natus iste molestiae temporibus nemo quae doloremque ab distinctio soluta accusamus tempore consequuntur dicta voluptate nesciunt beatae, vel, quam!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sit modi natus iste molestiae temporibus nemo quae doloremque ab distinctio soluta accusamus tempore consequuntur dicta voluptate nesciunt beatae, vel, quam!</p>
+		</div>
+	</div>
 	<div class="contenedor">
 		<div class="bloque-principal">
 			<h1 class="title">Hello, I am Kalay</h1>
@@ -140,3 +148,13 @@
 
 </body>
 </html>
+
+
+<script>
+	var ele=document.getElementById("cerrar-modal")
+	ele.addEventListener("click",cerrar)
+	function cerrar(){
+		var modal=document.getElementById("modal");
+		modal.classList.remove("activo");
+	}
+</script>
