@@ -1,0 +1,19 @@
+.t-mayuscula{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.clear{
+	clear: both;
+}
+.col-50{
+	width: 50%;
+	float: left;
+}
+
+.c-container{
+	width: 970px;
+	margin:0 auto;
+}
+.ico-service{
+	font-size: 100px;
+}

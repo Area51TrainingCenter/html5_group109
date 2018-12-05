@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="box">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+	</div>
+	
+</body>
+</html>
+
+<style>
+	.box{
+		width: 700px;
+		height: 400px;
+		background-color: tomato;
+		position: relative;
+	}
+	.box1{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 0px;
+		top:0px;
+		background-color: blue;
+		transition: all 0.3s linear 0s;
+		
+
+	}
+	.box2{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: absolute;
+		right: 0px;
+		top:0px;
+		transition: all 0.3s linear 0.4s;
+			
+
+	}
+	.box3{
+		width: 100px;
+		height: 100px;
+		background-color: orange;
+		position: absolute;
+		right: 0px;
+		bottom:0px;
+		transition: all 0.3s linear 0.8s;
+	}
+	.box4 {
+		width: 100px;
+		height: 100px;
+		background-color: skyblue;
+		position: absolute;
+		left: 0px;
+		bottom:0px;
+		transition: all 0.3s linear 1.2s;
+	}
+
+	.box:hover .box1{
+		transform: translate(600px,0px);
+		
+	}
+	.box:hover .box2{
+		transform: translate(0px,300px);
+		
+	}
+	.box:hover .box3{
+		transform: translate(-600px,0px);
+		
+	}
+	.box:hover .box4{
+		transform: translate(0px,-300px);
+		
+	}
+</style>

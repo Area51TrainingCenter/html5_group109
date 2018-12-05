@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul class="lista-fotos">
+		<li>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnJE4EYAxgrv4_Py4-ipF_UbNLxc2IR4RZXGDi6sg238xB9I34tg" alt="">
+			<div class="capa">
+					<span>Ver más</span>
+			</div>
+		</li>
+		<li>
+			<img src="https://via.placeholder.com/200" alt="">
+		</li>
+		<li>
+			<img src="https://via.placeholder.com/200" alt="">
+		</li>
+	</ul>
+	
+</body>
+</html>
+
+<style>
+	.lista-fotos{
+		width: 1100px;
+		text-align: center;
+		margin:20px auto;
+	}
+	.lista-fotos li{
+		width: 200px;
+		margin:20px;
+		display: inline-block;
+		vertical-align: top;
+		background-color: blue;
+		transition:all 0.2s linear;
+		overflow: hidden;
+		position: relative;
+		border-radius: 50%;
+	}
+	.lista-fotos li img{
+		width: 200px;
+		transition:all 0.2s linear 0.6s;
+		vertical-align: top;
+	} 
+	.capa{
+	width: 100%;
+	height: 100%;
+	background-color: tomato;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	transition: all 0.5s linear 0s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	.capa span{
+		font-family: arial;
+		font-size: 20px;
+		color: white;
+		font-weight: bold;
+	}
+
+	.lista-fotos li:hover img{
+		transform: scale(1.5) rotate(-10deg);
+		transition:all 0.2s linear 0s;
+	}
+
+	.lista-fotos li:hover .capa{
+		opacity: 1;
+		transition: all 0.5s linear 0.5s;
+	}
+</style>
