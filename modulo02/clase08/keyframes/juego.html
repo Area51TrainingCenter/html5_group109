@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="cancha">
+		<div class="jugador1"></div>
+		<div class="jugador2"></div>
+		<div class="balon"></div>
+		<div class="linea"></div>
+		<div class="centro"></div>
+	</div>
+</body>
+</html>
+
+<style>
+	.cancha{
+		width: 600px;
+		height: 400px;
+		background-color: black;
+		position: relative;
+		transform: rotate(90deg);
+		margin-top: 200px;
+	}
+	.jugador1{
+		width: 20px;
+		height: 100px;
+		background-color: white;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		animation:mov1 5s linear 0s infinite;
+		/*animation: nombre,tiempo,forma,delay,cantidad de veces ,direction, fill-mode;*/
+	}
+	.balon{
+		width: 20px;
+		height: 20px;
+		background-color: white;
+		position: absolute;
+		left: 40px;
+		top: 20px;
+		animation:balon 5s linear 0s infinite;
+		
+
+	}
+	.centro{
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		margin-top: -75px;
+		left: 50%;
+		margin-left: -75px;
+		border:2px solid white;
+		
+	}
+	.jugador2{
+		width: 20px;
+		height: 100px;
+		background-color: white;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		animation:mov2 5s linear 0s infinite;
+	}
+	.linea{
+		width: 2px;
+		height: 100%;
+		position: absolute;
+		left: 50%;
+		margin-left: -1px;
+		top: 0px;
+		background-color: white;
+	}
+	
+	@keyframes mov1{
+		0%{top:10px;} /* segundo 0*/
+		20%{top:290px;} /* segundo 1*/
+		50%{top: 150px;} /* segundo 2.5*/
+		80%{top:240px;} /* segundo 4*/
+		100%{top:10px;} /* segundo 5*/
+	}
+
+	@keyframes mov2{
+		0%{bottom:10px;} /* segundo 0*/
+		20%{bottom:220px;} /* segundo 1*/
+		50%{bottom: 90px;} /* segundo 2.5*/
+		80%{bottom:180px;} /* segundo 4*/
+		100%{bottom:10px;} /* segundo 5*/
+	}
+	@keyframes balon{
+		0%{left:40px;top:30px;} /* segundo 0*/
+		20%{top:140px;left:540px;} /* segundo 1*/
+		50%{left:40px;top:190px;} /* segundo 2.5*/
+		80%{left:540px;top:160px;} /* segundo 4*/
+		100%{left:40px;top:30px;} /* segundo 5*/
+	}
+
+
+
+
+
+</style>
