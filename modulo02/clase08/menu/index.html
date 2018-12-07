@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div id="menu" class="menu-modal">
+		<span id="cerrar" class="cerrar-menu">Cerrar</span>
+		<ul>
+			<li>Inicio</li>
+			<li>Nosotros</li>
+			<li>Contacto</li>
+		</ul>
+
+		<img src="https://via.placeholder.com/200x100" alt="">
+	</div>
+
+	<span id="menu-abrir">Menu</span>
+</body>
+</html>
+
+<style>
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: arial;
+}
+.cerrar-menu{
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+	.menu-modal{
+
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		display: none;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.menu-modal ul 
+	{
+		width: 90%;
+		padding: 0px;
+		
+	}
+	.menu-modal ul li{
+
+		list-style: none;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid white;
+	
+		color: white;
+		width: 100%;
+	}
+	.menu-modal img{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -100px;
+	}
+	.activo{
+		display: flex;
+	}
+</style>
+
+<script>
+	var ele=document.getElementById('menu-abrir');
+	ele.addEventListener("click",abrir)
+	function abrir(){
+		var ele=document.getElementById('menu');
+		ele.classList.add("activo");
+	}
+
+	var ele=document.getElementById('cerrar');
+	ele.addEventListener("click",cerrar)
+	function cerrar(){
+		var ele=document.getElementById('menu');
+		ele.classList.remove("activo");
+	}
+</script>

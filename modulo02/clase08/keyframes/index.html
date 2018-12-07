@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="box"></div>
+
+</body>
+</html>
+
+<style>
+	.box{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		border-radius: 50%;
+		animation: mov1 2s infinite;
+		-webkit-animation: mov1 2s infinite;
+	}
+
+	@keyframes mov1{
+		/*to{background-color: blue;}
+		from{background-color: red;}*/
+		0%{
+			background-color: red;
+		}
+		50%{
+			background-color: yellow;
+		}
+		100%{
+			background-color: red;
+		}
+	}
+
+	@-webkit-keyframes mov1{
+		/*to{background-color: blue;}
+		from{background-color: red;}*/
+		0%{
+			background-color: red;
+		}
+		50%{
+			background-color: yellow;
+		}
+		100%{
+			background-color: red;
+		}
+	}
+
+
+</style>
