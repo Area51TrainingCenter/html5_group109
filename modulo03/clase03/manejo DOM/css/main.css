@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+}
+.container{
+	width: 1024px;
+	margin:0 auto;
+}
+.header-site{
+	background-color: black;
+	color: white;
+}
+
+.header-site nav li{
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.activo{
+	border-bottom: 3px solid red;
+}
+.box-imagen-principal{
+	padding: 10px;
+	text-align: center;
+}
+.box-imagen-principal img{
+	width: 100%;
+}
+.lista-miniatura{
+	text-align: center;
+}
+.lista-miniatura li{
+	display: inline-block;
+	width: 300px;
+	margin:10px;
+	opacity: 0.5;
+}
+
+.lista-miniatura li img{
+	width: 100%
+}
+
+.lista-miniatura li.activo-minuatura{
+	opacity: 1;
+}
+
