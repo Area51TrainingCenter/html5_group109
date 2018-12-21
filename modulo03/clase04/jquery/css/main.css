@@ -1,0 +1,62 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+}
+.container{
+	width: 1024px;
+	margin:0 auto;
+}
+.header-site{
+	background-color: black;
+	color: white;
+}
+
+.header-site nav li{
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+	transition:all 0.2s linear;
+}
+.activo{
+	background-color: blue;
+}
+
+.flex-contenedor{
+	display: flex;
+	justify-content: center;
+	height: 400px;
+}
+.lateral{
+	width: 200px;
+	flex-grow: 0;
+	padding: 20px
+	
+}
+.lateral li{
+	list-style: none;
+	padding: 20px;
+}
+.noticias{
+flex-grow: 1;
+padding: 20px;
+
+}
+/*
+.info-noticias{
+	display: none;
+}
+.info-deportes{
+	display: none;
+}*/
+.ocultar{
+	display: none;
+}
+/*
+.mostrar{
+	display: block!important;
+}*/
