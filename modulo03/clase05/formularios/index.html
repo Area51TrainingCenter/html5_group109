@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+
+
+</head>
+<body>
+	<div class="elemento"></div>
+	<div class="container pt-4">
+		<h2>Probando eventos</h2>
+		<div class="row">
+			<div class="col-6">
+				<h3 class="pt-2" onclick="registro()">Registro</h3>
+				<form class="pt-2" action="http://www.google.com">
+					<div class="error" style="display: none;color:red;font-weight: bold;">
+						<p>Verifica los datos ingresados en el fomrulario</p>
+					</div>
+					<div class="group-control pt-3">
+						<label>Nombres</label>
+						<input id="inp_nombres" type="text" class="form-control" placeholder="Ingresar nombre">
+					</div>
+					<div class="group-control pt-3">
+						<label>Apellidos</label>
+						<input id="inp_apellidos" type="text" class="form-control" placeholder="Ingresar nombre">
+					</div>
+					<div class="group-control pt-3">
+						<label>Correo</label>
+						<input id="inp_correo" type="text" class="form-control" placeholder="Ingresar nombre">
+					</div>
+					<div class="group-control pt-3">
+						<label>Facebook</label>
+						<input id="inp_facebook" type="text" class="form-control" placeholder="Ingresar nombre">
+					</div>
+
+					<div class="group-control pt-3">
+						<label >Tipo</label>
+						<select id="inp_tipo" class="form-control">
+							<option value="1">Escuela</option>
+							<option value="2">Trabajo</option>
+						</select>
+					</div>
+
+					<div class="group-control pt-3">
+						<!--<button type="submit" class="btn btn-success float-right"       id="grabarDatos">Grabar</button>-->
+						<button type="button" class="btn btn-success float-right"       id="grabarDatos">Grabar</button>
+					</div>
+
+
+				</form>
+
+			</div>
+			<div class="col-6 pt-2">
+				<h3 class="pb-4">Listado de Personas</h3>
+				<div class="bloqueListado pt-2">
+					<!--<article class="pt-2">
+						<h2 class="h5 float-left">Nombres</h2>
+						<button class="btn btn-info float-right">Ver Detalle</button>
+						<div class="clearfix"></div>
+					</article>-->
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-12 pt-5">
+				<h3>Detalle Persona</h3>
+				<div class="detalle-persona">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
