@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="opciones-movil">
+		<div class="marco-opciones">
+		<ul>
+				<li>Inicio</li>
+				<li>Nosotros</li>
+				<li>Contácto</li>
+				<li>Inicio</li>
+				<li>Nosotros</li>
+				<li>Contácto</li>
+			</ul>
+			<span class="cerrar-menu">Cerrar</span>
+		</div>
+	</div>
+	<header class="header-site">
+		<span class="ico-menu">Menu</span>
+		<nav class="nav-site">
+			<ul>
+				<li>Inicio</li>
+				<li>Nosotros</li>
+				<li>Contácto</li>
+				<li>Inicio</li>
+				<li>Nosotros</li>
+				<li>Contácto</li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
+
+<style>
+
+*{
+	margin:0;
+	padding: 0;
+}
+.cerrar-menu{
+	display: inline-block;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	color: white;
+	background-color: black;
+}
+.opciones-movil{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+		display: none;
+
+}
+.marco-opciones{
+	background-color: yellow;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: arial;
+	font-size: 18px;
+	flex-direction: row;
+
+}
+.opciones-movil li{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.header-site
+{
+
+		background-color: black;
+		color: white;
+		font-family: arial;
+}
+.ico-menu{
+	display: inline-block;
+		vertical-align: top;
+		padding:20px;
+		font-size: 18px;
+		text-transform: uppercase;
+		display: none;
+
+}
+	.nav-site{
+	
+		
+	}
+	.nav-site ul li{
+		display: inline-block;
+		vertical-align: top;
+		padding:20px;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	@media(max-width: 850px){
+			.nav-site{display: none;}
+			.ico-menu{
+				display: block;
+			}
+			.nav-site ul li{
+				display: block;
+			}
+
+	}
+	.mostar{
+		display: block;
+	}
+</style>
+
+<script>
+	$(".ico-menu").click(function(){
+		$(".opciones-movil").addClass("mostar");
+		//$(".opciones-movil").fadeIn(2000);
+		//$(".nav-site").show();
+		/*var estado= $(".nav-site").is(":visible");
+		if(estado==true){
+			$(".nav-site").hide();
+		}
+		else{
+			$(".nav-site").show();	
+		}*/
+		//$(".nav-site").slideToggle();
+
+	})
+	$(".cerrar-menu").click(function(){
+		//$(".opciones-movil").fadeOut(2000);
+		$(".opciones-movil").removeClass("mostar");
+	})
+</script>
+
+

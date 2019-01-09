@@ -22,6 +22,12 @@
 	<!-- archivos para el ligtbox -->
 
 	<link href="css/lightbox.css" rel="stylesheet">
+	
+
+	<!-- archivos css para el carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
 
 <script>
  
@@ -32,7 +38,30 @@
 			reverse:true,
 			startAt:1
 		});	
+		$(".owl-carousel").owlCarousel({
+			items:3,
+			margin:20,
+			loop:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				500:{
+					items:3
+				},
+				1000:{
+					items:4
+				}
+			}
+		});
+
+
 	})
+
+	/*$(document).ready(function(){
+  		$(".owl-carousel").owlCarousel();
+	});*/
+
 	
 </script>
 
@@ -61,15 +90,60 @@
 
 <br>
 
-<a href="img/slide3.jpg" data-lightbox="image-1" >
-	<img style="width: 70px" src="img/slide3.jpg" />
+<a href="img/slide3.jpg" data-lightbox="listadoproductos" data-title="Foto portado 1" >
+	<img style="width: 100px" src="img/slide3.jpg" />
 </a>
+<a href="img/slide2.jpeg" data-lightbox="listadoproductos" data-title="Foto portado 1" >
+	<img style="width: 100px" src="img/slide2.jpeg" />
+</a>
+
+
+<br>
+
+<div class="owl-carousel">
+  <div>	
+	<article>
+		<img src="https://via.placeholder.com/150" alt="">
+		<h2>Lorem ipsum</h2>
+		<p> dolor sit amet, consectetur adipisicing elit. Unde praesentium assumenda, quasi molestias iusto perferendis similique aliquam quae amet consequatur esse, magnam, ex alias perspiciatis earum atque quam laudantium. Officia?</p>
+	</article>
+  </div>
+  <div>	
+	<article>
+		<img src="https://via.placeholder.com/150" alt="">
+		<h2>Lorem ipsum</h2>
+		<p> dolor sit amet, consectetur adipisicing elit. Unde praesentium assumenda, quasi molestias iusto perferendis similique aliquam quae amet consequatur esse, magnam, ex alias perspiciatis earum atque quam laudantium. Officia?</p>
+	</article>
+  </div>
+  <div>	
+	<article>
+		<img src="https://via.placeholder.com/150" alt="">
+		<h2>Lorem ipsum</h2>
+		<p> dolor sit amet, consectetur adipisicing elit. Unde praesentium assumenda, quasi molestias iusto perferendis similique aliquam quae amet consequatur esse, magnam, ex alias perspiciatis earum atque quam laudantium. Officia?</p>
+	</article>
+  </div>
+  <div>	
+	<article>
+		<img src="https://via.placeholder.com/150" alt="">
+		<h2>Lorem ipsum</h2>
+		<p> dolor sit amet, consectetur adipisicing elit. Unde praesentium assumenda, quasi molestias iusto perferendis similique aliquam quae amet consequatur esse, magnam, ex alias perspiciatis earum atque quam laudantium. Officia?</p>
+	</article>
+  </div>
+  <div>	
+	<article>
+		<img src="https://via.placeholder.com/150" alt="">
+		<h2>Lorem ipsum</h2>
+		<p> dolor sit amet, consectetur adipisicing elit. Unde praesentium assumenda, quasi molestias iusto perferendis similique aliquam quae amet consequatur esse, magnam, ex alias perspiciatis earum atque quam laudantium. Officia?</p>
+	</article>
+  </div>
+ 
+</div>
 
 
 
 </div>
 	<script src="js/lightbox.js"></script>
-
+	<script src="js/owl.carousel.min.js"></script>
 </body>
 </html>
 
