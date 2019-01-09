@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-- archivos para que el plugin flex slider funcione -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="js/jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+
+
+	<!-- Place in the <head>, after the three links -->
+	
+
+<!-- Place in the <head>, after the three links -->
+
+	<!-- archivos para el ligtbox -->
+
+	<link href="css/lightbox.css" rel="stylesheet">
+
+<script>
+ 
+	$(window).load(function(){
+		$('.flexslider').flexslider({
+			animation: "slide",
+			direction: "horizontal",
+			reverse:true,
+			startAt:1
+		});	
+	})
+	
+</script>
+
+
+
+	
+</head>
+<body>
+<div class="contenedor">
+	
+	<div class="flexslider">
+	  <ul class="slides">
+	    <li>
+	      <img src="img/slide1.jpg" />
+	    </li>
+	    <li>
+	      <img src="img/slide2.jpeg" />
+	    </li>
+	    <li>
+	       <img src="img/slide3.jpg" />
+	    </li>
+	  </ul>
+	</div>
+
+
+
+<br>
+
+<a href="img/slide3.jpg" data-lightbox="image-1" >
+	<img style="width: 70px" src="img/slide3.jpg" />
+</a>
+
+
+
+</div>
+	<script src="js/lightbox.js"></script>
+
+</body>
+</html>
+
+
+<style>
+	.contenedor{
+		width: 100%;
+		max-width: 900px;
+		margin:0 auto;
+	}
+</style>
