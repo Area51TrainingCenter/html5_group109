@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+</head>
+<body>
+	<div class="container pt-5">
+		<div class="row">
+			<div class="col-6 pt-5">
+
+				<h2>Listado Sitios Turisticos</h2>
+				<button id="cargar" class="btn btn-info">Cargar Sitios</button>
+				<select name="" id="select-sitios"></select>
+				<!--<ul class="listado-sitios">
+					
+				</ul>-->
+
+				<button id="mostrar">Ver Sitio</button>
+			</div>
+			<div class="col-6 pt-5">
+				<h2>Detalle sitio turistico
+				</h2>
+				<div class="detalle">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+</html>
+<style>
+	li{
+		list-style: none;
+		margin-bottom: 20px;
+	}
+	.img-circulo{
+		width: 100px;
+		border-radius: 50%;
+
+	}
+	#mostrar{
+		font-size :30px;
+	}
+	.full-img{
+		width: 100%;
+	}
+</style>
+<script>
+	$(function(){
+		/*$("#cargar").click(function(){
+
+			$.ajax({
+				url:"http://sminnova.com/restapitrujillo/sitiosturisticos",
+				data:{userId:2},
+				type:"get",
+				dataType:"json",
+				success:function(res){
+				 	
+				 	console.log(res);
+				 	console.log(res[0]);
+				},
+				error:function(error){
+					console.log("la peticion NO se realizo")
+				 	console.log(error);
+				},
+				complete:function(){
+					console.log("la peticion finalizo")
+				 		
+				}		
+			})
+
+		})*/
+		$("#cargar").click(function(){
+
+
+			let url="http://sminnova.com/restapitrujillo/sitiosturisticos";
+			$.getJSON(url,function(res){
+				//listado de sitios obtenidos por el json
+				//res
+				$(".listado-sitios").html("");
+				for(var i=0;i<res.length;i++){
+					
+					console.log(res[i])
+					let id=res[i].id;
+					let nombre=res[i].nombre;
+					let foto=res[i].foto_principal;
+					let sello;
+					if(res[i].sello_turistico==0){
+						sello="No recomendado";
+					}
+					else{
+						sello="SITIO RECOMENDADO"
+					}
+					$("#select-sitios").append(`<option value="${id}">${nombre}</option>`)
+
+					/*$(".listado-sitios").append(`<li>
+							<img class="img-circulo" src="${foto}" alt="">
+							<h2>${nombre}</h2>
+							<span>${sello}</span>
+						</li>`)*/
+				}
+			})
+
+
+		})
+
+		/*$("#mostrar").click(function(){
+			let id=$("#select-sitios").val();
+			let url="http://sminnova.com/restapitrujillo/sitiosturisticos/id/"+id;
+			$.getJSON(url,function(res){
+				console.log(res);
+				let nombre=res[0].nombre;
+				let foto=res[0].foto_principal;
+				let historia=res[0].historia
+				let facebook=res[0].facebook
+				let twitter=res[0].twitter
+				let telefono=res[0].telefono;
+				$(".detalle").html(`
+					<div>
+						<h1>${nombre}</h1>
+						<img src="${foto}" class="full-img" alt="">
+						<a href="${facebook}">Facebook</a> <a href="${twitter}">Twitter</a>
+						<div>${historia}</div>
+						<a href="${telefono}">LLamar</a>
+						<span>Ubicacion</span>
+					</div>`)
+			})
+
+		})*/
+
+	
+		$("#select-sitios").change(function(){
+			let id=$("#select-sitios").val();
+			let url="http://sminnova.com/restapitrujillo/sitiosturisticos/id/"+id;
+			$.getJSON(url,function(res){
+				console.log(res);
+				let nombre=res[0].nombre;
+				let foto=res[0].foto_principal;
+				let historia=res[0].historia
+				let facebook=res[0].facebook
+				let twitter=res[0].twitter
+				let telefono=res[0].telefono;
+				$(".detalle").html(`
+					<div>
+						<h1>${nombre}</h1>
+						<img src="${foto}" class="full-img" alt="">
+						<a href="${facebook}">Facebook</a> <a href="${twitter}">Twitter</a>
+						<div>${historia}</div>
+						<a href="${telefono}">LLamar</a>
+						<span>Ubicacion</span>
+					</div>`)
+			})
+		})
+
+	})
+</script>

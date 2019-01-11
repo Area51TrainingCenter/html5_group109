@@ -1,0 +1,19 @@
+creas carpeta por la linea de comandos
+accedes a la carpeta y clonas el repositorio
+
+git clone rutaderepostio
+
+luego accedes a la carpeta clonada
+
+
+// una vez realizado los cambios para subir estos al repositorio utilizar la siguiente linea de comandos
+
+git add * // te permite subir todos los archivos cambiados
+git commit -m "docuemntar tu cambio"
+git push origin master
+
+
+
+// descarga los cambios
+
+git pull origin master
